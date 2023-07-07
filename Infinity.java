@@ -152,18 +152,67 @@ static void hcf(int n1, int n2){
     }
 
 }
-    public static void main(String[] args) {
+// static int i=1;
+// static void digit(int n){
+    
+//     if(i == n) return;{
+//         System.out.println(i);
+//         i+=1;
+//         digit(n);
+//     }
+// }
+
+// static void name_recursion(int i, int n){
+//     if(i<=n){
+//         System.out.println("Viral");
+//         name_recursion(i+1, n);
+
+//     }
+// }
+
+// static void one_n(int i, int n){
+//     if(i>n)return;
+//         System.out.println(i);
+//         one_n(i+1, n);
+    
+// }
+
+// static void n_one(int i, int n){
+//     if(i<n)return;
+//         System.out.println(i);
+//         n_one(i-1, n);
+    
+// }
+
+static void sum_n(int n){
+    int sum=0;
+    for(int i=1; i<=n; i++){
+    sum += i;
+
+    }
+            System.out.println(sum);
+
+}
+
+
+public static void main(String[] args) {
+    Infinity in=new Infinity();
     Scanner sc=new Scanner(System.in);
-    int n1=sc.nextInt();
-    int n2=sc.nextInt();
+    int n=sc.nextInt();
+
+    in.sum_n(n);
+    // in.sum_n(1, n);
+    //in.n_one(n, 1);
+    //in.one_n(1,n);
+    //in.name_recursion(i,n);
+    // in.digit(n);
+    // int n2=sc.nextInt();
 
     //armstrong(n);
     //divisors(n);
     //primeornon(n);
     //reverse(n);
     //gcd(n1, n2);
-    hcf(n1, n2);
-    
-
+    // hcf(n1, n2);
 }
 }
