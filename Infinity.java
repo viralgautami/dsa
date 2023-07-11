@@ -194,13 +194,35 @@ static void sum_n(int n){
 
 }
 
+static void printArray(int ans[],int n){
+    System.out.println("reversed");
+    for(int i=0; i<n; i++){
+        System.out.print(ans[i] + " ");
+    }
+    System.out.println();
+}
+static void reversearr(int arr[],int n){
+    int[] ans=new int[n];
+    for(int i=n-1;i>=0;i--){
+        ans[n - i - 1]=arr[i];
+    }
+    printArray(ans, n);
+}
 
 public static void main(String[] args) {
     Infinity in=new Infinity();
     Scanner sc=new Scanner(System.in);
     int n=sc.nextInt();
+    int arr[] = new int[n];
+    for (int i = 0; i < n; i++) {
+        arr[i] = sc.nextInt();
+    }
 
-    in.sum_n(n);
+    in.reversearr(arr, n);
+
+
+
+    //in.sum_n(n);
     // in.sum_n(1, n);
     //in.n_one(n, 1);
     //in.one_n(1,n);
