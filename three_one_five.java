@@ -27,10 +27,10 @@ public class three_one_five {
         int n=sc.nextInt();
         int arr[]=new int[n];
         for(int i=0; i<n; i++){
-            arr[i]=sc.nextInt();
+        arr[i]=sc.nextInt();
         }
-        //Brute(arr, n);
-        Optimal(arr, n);
+        Brute(arr, n);
+        // Optimal(arr, n);
         sc.close();
     
     }
