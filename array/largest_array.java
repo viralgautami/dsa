@@ -1,6 +1,6 @@
 package array;
 
-public class laegest_array {
+public class largest_array {
 
     public static int getLargest(int numbers[]){
         int largest = Integer.MIN_VALUE;
