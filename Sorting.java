@@ -69,8 +69,5 @@ public class Sorting {
         selection_sort(arr, n);
         insertion_sort(arr, n);
 
-
-
-        // viral
     }
 }
