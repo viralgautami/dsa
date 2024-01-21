@@ -21,7 +21,6 @@ public class couniting_sort {
 
             }
         }
-
     }
     public static void printArr(int arr[]){
         for(int i=0; i<arr.length; i++){
